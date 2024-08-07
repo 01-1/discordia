@@ -1,0 +1,2 @@
+# A personal discord bot
+
