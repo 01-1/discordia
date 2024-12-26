@@ -15,10 +15,10 @@ change username/icon/banner as desired
 
 ### server:
 ```
-apt install python3-discord # change for non-debian
 cd /srv
 git clone https://github.com/01-1/discordia.git
 vi discordia/secrets.py # add secrets here
+sudo apt install python3-discord # change for non-debian
 sudo cp discordia/Discordia.service /etc/systemd/system/Discordia.service
 sudo useradd discordia
 sudo chown discordia discordia
