@@ -1,0 +1,14 @@
+[Unit]
+Description=the Discordia bot
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 bot.py
+WorkingDirectory=/srv/discordia
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=discordia
+
+[Install]
+WantedBy = multi-user.target
